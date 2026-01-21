@@ -2,10 +2,12 @@
 {
     'name': "hr_employee_es_id",
 
-    'summary': "Short (1 phrase/line) summary of the module's purpose",
+    'summary': "Extensión de hr.employee para identificación española (NSS y DNI)",
 
     'description': """
-Long description of module's purpose
+Extensión del módulo hr.employee para incluir:
+- Número de Seguridad Social (NSS)
+- DNI con validación de letra de control
     """,
 
     'author': "My Company",
@@ -14,11 +16,11 @@ Long description of module's purpose
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/15.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
-    'category': 'Uncategorized',
+    'category': 'Human Resources',
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base'],
+    'depends': ['base', 'hr'],
 
     # always loaded
     'data': [
